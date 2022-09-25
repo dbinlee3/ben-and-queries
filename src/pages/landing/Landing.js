@@ -30,7 +30,7 @@ function Landing() {
 
                     <h1>Ben Lee.</h1>
 
-                    <p>{landingDescription}</p>
+                    <h4>{landingDescription}</h4>
                     <img src={doubleArrow} alt=""/>
                 </section>
             </div>
