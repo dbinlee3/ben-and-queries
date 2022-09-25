@@ -1,0 +1,1 @@
+export const landingDescription = "Fullstack Web and App developer based in California.";
