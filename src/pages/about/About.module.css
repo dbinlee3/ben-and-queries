@@ -6,3 +6,68 @@
     justify-content: center;
     align-items: center;
 }
+
+.content {
+    max-width: 1080px;
+    width: 75%;
+    height: 480px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 18px;
+    width: 500px;
+    height: 440px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    grid-gap: 18px;
+}
+
+.header h3 {
+    color: var(--font-light);
+}
+
+.header hr {
+    height: 3px;
+    width: 240px;
+    background-color: var(--secondary);
+    border: none;
+}
+
+.left p {
+    color: var(--font);
+}
+
+.skillsList {
+    width: auto;
+    height: auto;
+    background: linear-gradient(to right, var(--primary), rgb(0,0,0,0));
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33%);
+    grid-row-gap: 10px;
+}
+
+.skillsList > li {
+    display: flex;
+    align-items: center;
+    grid-gap: 7px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 9px solid var(--secondary);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}

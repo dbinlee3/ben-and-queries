@@ -40,6 +40,10 @@ p {
   font-weight: 300;
 }
 
+ul {
+  list-style: none;
+}
+
 .button-primary {
   border: 1px solid var(--secondary);
   background: none;
