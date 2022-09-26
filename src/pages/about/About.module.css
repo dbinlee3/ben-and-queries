@@ -39,6 +39,7 @@
 .header hr {
     height: 3px;
     width: 55%;
+    max-width: 240px;
     background-color: var(--secondary);
     border: none;
 }
