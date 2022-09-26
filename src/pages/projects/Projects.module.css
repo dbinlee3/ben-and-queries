@@ -43,6 +43,11 @@
     position: relative;
 }
 
+.projects .projectContainer:nth-child(even) {
+    text-align: right;
+}
+
+
 .projectImgLink {
     height: inherit;
     max-width: 600px;
@@ -55,9 +60,17 @@
 .projectContent {
     position: absolute;
     top: 0;
+    max-width: 49%;
+}
+
+.projects .projectContainer:nth-child(even) .projectContent{
+    left: 0;
+    text-align: left;
+}
+
+.projects .projectContainer:nth-child(odd) .projectContent{
     right: 0;
     text-align: right;
-    max-width: 49%;
 }
 
 .projectHeader {
