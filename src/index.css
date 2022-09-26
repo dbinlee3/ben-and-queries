@@ -12,6 +12,10 @@
   --font-light: #FFFFFF;
 }
 
+body {
+  background-color: var(--primary-dark);
+}
+
 body::-webkit-scrollbar {
   display: none;
 }

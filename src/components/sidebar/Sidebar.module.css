@@ -1,0 +1,26 @@
+.container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    padding: 0 18px;
+}
+
+.icon {
+    width: 30px;
+}
+
+.line {
+    border-left: 1px solid var(--font);
+    height: 180px;
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        display: none;
+    }
+}
