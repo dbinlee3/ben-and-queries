@@ -15,10 +15,12 @@ function Work() {
 
                         <div className={styles.entryHeader}>
                             <div className={styles.entryHeaderText}>
-                                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                                <a className={styles.jobTitle} href={item.link} target="_blank" rel="noopener noreferrer">
                                     <h3>{item.title}</h3>
-                                    <h3>@ {item.name}</h3>
+                                    <h3 className={styles.jobTitleGold}> @ {item.name}</h3>
                                 </a>
+
+                                <h5>{item.dates.start}&nbsp; - &nbsp;{item.dates.end}</h5>
                             </div>
 
                             <a className={styles.entryImgLink} href={item.link} target="_blank" rel="noopener noreferrer">
@@ -26,14 +28,14 @@ function Work() {
                             </a>
                         </div>
 
-                        <div className={styles.descriptionContainer}>
+                        <ul className={styles.descriptionContainer}>
                             {item.bullets.map((bullet) => {
-                                return <li>
+                                return <li className={styles.description}>
                                     <div className={styles.triangle} />
                                     <p>{bullet}</p>
                                 </li>
                             })}
-                        </div>
+                        </ul>
                     </li>
                 })}
             </ul>

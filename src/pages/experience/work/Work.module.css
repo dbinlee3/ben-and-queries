@@ -1,0 +1,100 @@
+.container {
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(8px, 1.2vw, 18px);
+}
+
+.header h3 {
+    color: var(--font-light);
+}
+
+.header hr {
+    height: 3px;
+    width: 240px;
+    background-color: var(--secondary);
+    border: none;
+}
+
+.content {
+    width: 90%;
+}
+
+.entryContainer {
+    width: inherit;
+    height: auto;
+}
+
+.entryHeader {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.jobTitle {
+    text-decoration: none;
+    color: var(--font-light);
+}
+
+.jobTitle > h3 {
+    display: inline;
+}
+
+.jobTitleGold {
+    color: var(--secondary);
+}
+
+.entryHeaderText > h5 {
+    color: var(--font);
+}
+
+.entryImgLink {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    
+}
+
+.entryImg {
+    width: inherit;
+    border-radius: 50%;
+    border: 3px solid var(--font);
+    box-sizing: border-box;
+}
+
+.descriptionContainer {
+    margin-top: 22px;
+    width: 100%;
+    height: auto;
+    padding: 12px 16px;
+    background: linear-gradient(to right, var(--primary), rgb(0,0,0,0));
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
+
+}
+
+.description {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.triangle {
+    margin-top: 8px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid var(--secondary);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
+.description > p {
+    color: var(--font);
+}
