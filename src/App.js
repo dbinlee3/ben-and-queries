@@ -1,5 +1,6 @@
 import Header from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
+import Footer from "./components/footer/Footer";
 
 import Landing from "./pages/landing/Landing";
 import About from "./pages/about/About";
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Projects />
       <Experience />
+      <Footer />
     </>
   );
 }
