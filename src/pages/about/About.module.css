@@ -1,0 +1,122 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 1080px;
+    width: 75%;
+    height: 480px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 40px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 18px;
+    width: 500px;
+    height: 440px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    grid-gap: clamp(8px, 1.2vw, 18px);
+}
+
+.header h3 {
+    color: var(--font-light);
+}
+
+.header hr {
+    height: 3px;
+    width: 55%;
+    background-color: var(--secondary);
+    border: none;
+}
+
+.left p {
+    color: var(--font);
+}
+
+.skillsList {
+    width: auto;
+    height: auto;
+    background: linear-gradient(to right, var(--primary), rgb(0,0,0,0));
+    padding: 8px 10px;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33%);
+    grid-row-gap: 10px;
+}
+
+.skillsList > li {
+    display: flex;
+    align-items: center;
+    grid-gap: 7px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 9px solid var(--secondary);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+}
+
+.photo {
+    width: clamp(340px, 100%, 390px);
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        height: auto;
+    }
+
+    .content {
+        padding: 80px 0;
+        height: 100%;
+        /* background-color: black; */
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .left {
+        height: clamp(200px, 50%, 480px);
+        width: 100%;
+     }
+
+
+     .photo {
+        width: clamp(240px, 80%, 340px);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .content {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .skillsList {
+        grid-template-columns: repeat(auto-fill, 50%);
+    }
+}
