@@ -6,7 +6,7 @@ import About from "./pages/about/About";
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Landing />
       <About />
     </>

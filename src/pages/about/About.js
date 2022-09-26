@@ -30,7 +30,7 @@ function About() {
                 </section>
 
                 <section className={styles.right}>
-                    <img src={photo} alt=""/>
+                    <img src={photo} className={styles.photo} alt=""/>
                 </section>
             </div>
         </div>
