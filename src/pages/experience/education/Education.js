@@ -14,7 +14,21 @@ function Education() {
             <ul className={styles.content}>
                 {data.map((item) => {
                     return <li className={styles.entryContainer}>
+                        <h5>{!item.completed && "Expected "}{item.date}</h5>
+                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                            <h3>{item.title}</h3>
+                        </a>
 
+                        <div className={styles.descriptionContainer}>
+                            <div className={styles.description}>
+                                <div className={styles.triangle} />
+                                <p>{item.school}</p>
+                            </div>
+                            <div className={styles.description}>
+                                <div className={styles.triangle} />
+                                <p>{item.degree}</p>
+                            </div>
+                        </div>
                     </li>   
                 })}
             </ul>
