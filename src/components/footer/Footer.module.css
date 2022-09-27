@@ -17,7 +17,7 @@
 }
 
 .content > h1 {
-    color: var(--font);
+    color: var(--font-light);
 }
 
 .coffee {

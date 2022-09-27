@@ -9,11 +9,6 @@ import close from "../../assets/icons/close.svg";
 /* Style Sheet */
 import styles from "./Header.module.css";
 
-function scrollSection(ref) {
-    if (ref[0] === "#") document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
-    else window.open(ref);
-}
-
 function Header() {
 
     const [menuState, setMenuState] = useState(false);
@@ -25,6 +20,14 @@ function Header() {
         }
     }
     document.addEventListener('mousedown', closeMenu);
+
+    function scrollSection(ref) {
+        if (ref[0] === "#") {
+            document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
+            setMenuState(false);
+        }
+        else window.open(ref);
+    }
 
     return (<>
         {menuState && <div className={styles.menuBackground}></div>}

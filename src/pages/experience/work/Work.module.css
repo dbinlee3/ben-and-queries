@@ -45,6 +45,11 @@
 .jobTitle {
     text-decoration: none;
     color: var(--font-light);
+    transition-duration: 0.275s;
+}
+
+.jobTitle:hover {
+    opacity: 0.5;
 }
 
 .jobTitle > h3 {
@@ -63,7 +68,11 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    
+    transition-duration: 0.275s;
+}
+
+.entryImgLink:hover {
+    opacity: 0.6;
 }
 
 .entryImg {

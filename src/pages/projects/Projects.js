@@ -32,7 +32,7 @@ function Projects() {
 
                                 <div className={styles.projectHeader}>
                                     {project.inProgress && <h5>in development</h5>}
-                                    <a className={styles.projectImgLink} 
+                                    <a className={styles.projectHeaderLink} 
                                         href={project.inProgress 
                                         ? project.links.find(item => item.name === "Github").link 
                                         : project.links.find(item => item.name === "Website").link
