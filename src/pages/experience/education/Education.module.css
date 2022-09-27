@@ -1,6 +1,7 @@
 .container {
     max-width: 445px;
     width: 40%;
+    padding-top: 80px;
 }
 
 .header {
@@ -79,6 +80,5 @@
 
     .container {
         width: 100%;
-        padding-top: 80px;
     }
 }

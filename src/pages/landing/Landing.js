@@ -8,6 +8,10 @@ import { landingDescription } from "../../TextData.js";
 
 import styles from "./Landing.module.css";
 
+function scrollNext(ref) {
+    document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
+}
+
 function Landing() {
     return (
         <div className={styles.container}>
@@ -31,7 +35,7 @@ function Landing() {
                     <h1>Ben Lee.</h1>
 
                     <h4>{landingDescription}</h4>
-                    <img src={doubleArrow} alt=""/>
+                    <img src={doubleArrow} alt="" onClick={() => scrollNext("#about")}/>
                 </section>
             </div>
         </div>

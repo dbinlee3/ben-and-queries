@@ -8,6 +8,11 @@ import menu from "../../assets/icons/menu.svg";
 /* Style Sheet */
 import styles from "./Header.module.css";
 
+function scrollSection(ref) {
+    if (ref[0] === "#") document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
+    else window.open(ref);
+}
+
 function Header() {
 
     const [menuState, setMenuState] = useState(false);
@@ -17,9 +22,8 @@ function Header() {
             <div className={styles.content}>
 
                 <section className={styles.left}>
-
-                    <img src={logo} alt="Logo"/>
-                    <h2>ben {"&"} queries</h2>
+                    <a href="/"><img src={logo} alt="Logo"/></a>
+                    <a href="/"><h2>ben {"&"} queries</h2></a>
 
                 </section>
 
@@ -35,7 +39,7 @@ function Header() {
 
                     <div className={menuState ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
                         {navItems.map((item) => {
-                            return <button onClick={() => alert(item.name)}className={item.className}>{item.name}</button>
+                            return <button onClick={() => scrollSection(item.ref)}className={item.className}>{item.name}</button>
                         })}
                     </div>
 

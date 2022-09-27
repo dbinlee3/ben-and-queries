@@ -4,7 +4,7 @@ import styles from "./Work.module.css";
 
 function Work() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="#work">
             <div className={styles.header}>
                 <h3>Work Experience</h3>
                 <hr />
