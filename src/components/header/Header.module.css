@@ -27,6 +27,11 @@
     grid-gap: 20px;
 }
 
+.left > a {
+    display: flex;
+    align-items: center;
+}
+
 .left img{
     width: 40px;
 }

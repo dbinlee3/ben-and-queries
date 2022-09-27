@@ -16,7 +16,7 @@ function Education() {
                     return <li className={styles.entryContainer}>
                         <h5>{!item.completed && "Expected "}{item.date}</h5>
                         <a href={item.link} target="_blank" rel="noopener noreferrer">
-                            <h3>{item.title}</h3>
+                            {item.title}
                         </a>
 
                         <div className={styles.descriptionContainer}>

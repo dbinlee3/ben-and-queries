@@ -34,12 +34,12 @@
 }
 
 .entryContainer > a {
-    width: auto;
     text-decoration: none;
+    color: var(--font-light);
 }
 
 .entryContainer h3 {
-    color: var(--font-light);
+    width: auto;
 }
 
 .descriptionContainer {
@@ -56,6 +56,9 @@
 
 .descriptionContent {
     padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 12px;
 }
 
 .description {

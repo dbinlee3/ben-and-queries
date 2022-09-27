@@ -32,7 +32,14 @@ function Projects() {
 
                                 <div className={styles.projectHeader}>
                                     {project.inProgress && <h5>in development</h5>}
-                                    <h3>{project.name}</h3>
+                                    <a className={styles.projectImgLink} 
+                                        href={project.inProgress 
+                                        ? project.links.find(item => item.name === "Github").link 
+                                        : project.links.find(item => item.name === "Website").link
+                                    } 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                    >{project.name}</a>
                                 </div>
 
                                 <div className={styles.descContainer}>
