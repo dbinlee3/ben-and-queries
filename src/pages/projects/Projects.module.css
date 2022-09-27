@@ -122,6 +122,12 @@
 }
 
 @media screen and (max-width: 900px) {
+
+    .content {
+        width: 82%;
+    }
+
+
     .projectImgLink {
         max-width: 600px;
         width: 66%;
@@ -129,6 +135,10 @@
 
     .projectContent {
         max-width: 66%;
+    }
+
+    .projectContainer {
+        max-height: none;
     }
 
 }
@@ -141,6 +151,8 @@
     .projects {
         padding: 60px 0 0 0;
         grid-gap: 100px;
+
+        grid-gap: clamp(40px, 4vw, 100px);
     }
 
     .projectImgLink {

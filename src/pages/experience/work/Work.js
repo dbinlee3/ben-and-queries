@@ -28,14 +28,16 @@ function Work() {
                             </a>
                         </div>
 
-                        <ul className={styles.descriptionContainer}>
-                            {item.bullets.map((bullet) => {
-                                return <li className={styles.description}>
-                                    <div className={styles.triangle} />
-                                    <p>{bullet}</p>
-                                </li>
-                            })}
-                        </ul>
+                        <div className={styles.descriptionContainer}>
+                            <ul className={styles.descriptionContent}>
+                                {item.bullets.map((bullet) => {
+                                    return <li className={styles.description}>
+                                        <div className={styles.triangle} />
+                                        <p>{bullet}</p>
+                                    </li>
+                                })}
+                            </ul>
+                        </div>
                     </li>
                 })}
             </ul>

@@ -10,7 +10,7 @@ function Education() {
                 <h3>Education</h3>
                 <hr />
             </div>
-
+            
             <ul className={styles.content}>
                 {data.map((item) => {
                     return <li className={styles.entryContainer}>
@@ -20,13 +20,15 @@ function Education() {
                         </a>
 
                         <div className={styles.descriptionContainer}>
-                            <div className={styles.description}>
-                                <div className={styles.triangle} />
-                                <p>{item.school}</p>
-                            </div>
-                            <div className={styles.description}>
-                                <div className={styles.triangle} />
-                                <p>{item.degree}</p>
+                            <div className={styles.descriptionContent}>
+                                <div className={styles.description}>
+                                    <div className={styles.triangle} />
+                                    <p>{item.school}</p>
+                                </div>
+                                <div className={styles.description}>
+                                    <div className={styles.triangle} />
+                                    <p>{item.degree}</p>
+                                </div>
                             </div>
                         </div>
                     </li>   

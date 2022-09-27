@@ -51,6 +51,9 @@ p {
 
 ul {
   list-style: none;
+  padding: 0;
+  /* padding-inline-start: 40px; */
+
 }
 
 .button-primary {
