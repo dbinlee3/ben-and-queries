@@ -8,7 +8,7 @@
   --primary: #48515F;
   --primary-dark: #40414D;
   --secondary: #EDC127;
-  --font: #DEDEDE;
+  --font: #c9c9c9;
   --font-light: #FFFFFF;
 }
 
@@ -63,6 +63,7 @@ ul {
 }
 
 .button-primary {
+  cursor: pointer;
   border: 1px solid var(--secondary);
   background: none;
   color: var(--secondary);
@@ -71,6 +72,11 @@ ul {
   padding: 0px 16px;
   border-radius: 6px;
   font-weight: 300;
+  transition-duration: 0.275s;
+}
+
+.button-primary:hover {
+    background-color: rgba(255, 255, 255, 0.15)
 }
 
 @media screen and (max-width: 900px) {

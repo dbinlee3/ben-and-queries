@@ -36,6 +36,11 @@
 
 .leftContent h1 {
     color: var(--font);
+    transition-duration: 0.275s;
+}
+
+.leftContent h1:hover {
+    color: var(--font-light);
 }
 
 .leftContent hr {
@@ -72,7 +77,28 @@
 }
 
 .right img {
+    cursor: pointer;
     width: 60px;
+    animation-duration: 0.8s;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-duration: 0.275s;
+}
+
+@keyframes moving {
+    from {
+        margin-left: 0;
+    }
+    to {
+        margin-left: 6px;
+    }
+}
+
+.right img:hover {
+    animation-iteration-count: 0;
+    margin-left: 6px;
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 900px) {

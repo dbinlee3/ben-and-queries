@@ -47,17 +47,32 @@
     text-align: right;
 }
 
-
 .projectImgLink {
     height: inherit;
     max-width: 600px;
     width: 55%;
 }
 
+.projectHeaderLink {
+    color: var(--font-light);
+    transition-duration: 0.275s;
+}
+
+.projectHeaderLink:hover {
+    opacity: 0.5;
+}
+
 .projectImg {
     height: inherit;
     width: inherit;
+    opacity: 0.6;
+    transition-duration: 0.275s;
 }
+
+.projectImg:hover {
+    opacity: 1;
+}
+
 
 .projectContent {
     position: absolute;
@@ -119,6 +134,11 @@
 
 .projectLink > img {
     height: 36px;
+    transition-duration: 0.275s;
+}
+
+.projectLink > img:hover {
+    filter: brightness(200%);
 }
 
 @media screen and (max-width: 900px) {

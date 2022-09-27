@@ -12,7 +12,14 @@
 
 .icon {
     width: 36px;
+    transition-duration: 0.275s;
 }
+
+.icon:hover {
+    filter: brightness(200%);
+}
+
+
 
 .line {
     border-left: 1px solid var(--font);
