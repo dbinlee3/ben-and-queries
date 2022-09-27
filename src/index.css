@@ -50,6 +50,7 @@ p {
 }
 
 a {
+  font-size: clamp(24px, 1.8vw, 32px);
   text-decoration: none;
   color: var(--font);
 }
@@ -81,6 +82,10 @@ ul {
 @media screen and (max-width: 720px) {
 
   h3 {
+    font-size: clamp(26px, 6vw, 32px);
+  }
+
+  a {
     font-size: clamp(26px, 6vw, 32px);
   }
 

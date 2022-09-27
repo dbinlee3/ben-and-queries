@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { navItems } from "./NavItems.js";
 
 /* Assets */
 import logo from "../../assets/icons/logo.svg";
 import menu from "../../assets/icons/menu.svg";
+import close from "../../assets/icons/close.svg";
 
 /* Style Sheet */
 import styles from "./Header.module.css";
@@ -16,8 +17,17 @@ function scrollSection(ref) {
 function Header() {
 
     const [menuState, setMenuState] = useState(false);
+    const menuRef = useRef(null);
 
-    return (
+    const closeMenu = (e) => {
+        if (menuRef.current && menuState && !menuRef.current.contains(e.target)){
+            setMenuState(false);
+        }
+    }
+    document.addEventListener('mousedown', closeMenu);
+
+    return (<>
+        {menuState && <div className={styles.menuBackground}></div>}
         <div className={styles.container}>
             <div className={styles.content}>
 
@@ -37,10 +47,19 @@ function Header() {
                         onClick={() => setMenuState(!menuState)} 
                     />
 
-                    <div className={menuState ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
-                        {navItems.map((item) => {
-                            return <button onClick={() => scrollSection(item.ref)}className={item.className}>{item.name}</button>
-                        })}
+                    
+
+                    <div ref={menuRef} className={menuState ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
+
+                        
+
+                        <div className={styles.navContent}>
+
+                        <img className={styles.close} src={close} alt="Close" onClick={() => setMenuState(false)}/>
+                            {navItems.map((item) => {
+                                return <button onClick={() => scrollSection(item.ref)}className={item.className}>{item.name}</button>
+                            })}
+                        </div>
                     </div>
 
 
@@ -48,6 +67,7 @@ function Header() {
 
             </div>
         </div>
+        </>
     )
 }
 
