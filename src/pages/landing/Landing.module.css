@@ -11,7 +11,6 @@
     max-width: 1080px;
     width: 75%;
     height: 480px;
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
 }
@@ -22,7 +21,6 @@
     justify-content: center;
     position: relative;
     height: 480px;
-    /* background-color: rgb(58, 89, 89); */
 }
 
 .leftContent {
