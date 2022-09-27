@@ -36,9 +36,11 @@ function Projects() {
                                 </div>
 
                                 <div className={styles.descContainer}>
-                                    {project.desc.map((description) => {
-                                        return <p className={styles.description}>{description}</p>
-                                    })}
+                                    <div className={styles.descContent}>
+                                        {project.desc.map((description) => {
+                                            return <p className={styles.description}>{description}</p>
+                                        })}
+                                    </div>
                                 </div>
 
                                 <div className={styles.projectLinks}>

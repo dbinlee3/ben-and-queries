@@ -63,3 +63,14 @@ ul {
   border-radius: 6px;
   font-weight: 300;
 }
+
+@media screen and (max-width: 720px) {
+
+  h3 {
+    font-size: clamp(26px, 6vw, 32px);
+  }
+
+  p {
+    font-size: clamp(16px, 3vw, 20px);
+  }
+}
