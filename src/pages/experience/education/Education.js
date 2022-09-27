@@ -5,7 +5,7 @@ import styles from "./Education.module.css";
 
 function Education() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="#education">
             <div className={styles.header}>
                 <h3>Education</h3>
                 <hr />

@@ -5,7 +5,7 @@ import styles from "./Projects.module.css";
 
 function Projects() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="#projects">
             <div className={styles.content}>
                 <div className={styles.header}>
                     <h3>Projects</h3>

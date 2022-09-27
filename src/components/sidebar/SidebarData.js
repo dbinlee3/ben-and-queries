@@ -18,5 +18,4 @@ export const data = [
         img: github,
         link: "https://github.com/dbinlee3"
     }
-    
 ]

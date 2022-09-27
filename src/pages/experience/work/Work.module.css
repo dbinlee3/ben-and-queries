@@ -1,4 +1,5 @@
 .container {
+    padding-top: 80px;
     width: 50%;
     max-width: 540px;
     display: flex;
@@ -11,7 +12,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    grid-gap: clamp(8px, 1.2vw, 18px);
+    grid-gap: clamp(4px, 1.2vw, 18px);
 }
 
 .header h3 {
@@ -20,7 +21,8 @@
 
 .header hr {
     height: 3px;
-    width: 240px;
+    width: 40%;
+    max-width: 240px;
     background-color: var(--secondary);
     border: none;
 }
@@ -105,8 +107,19 @@
     color: var(--font);
 }
 
+@media screen and (max-width: 900px){
+    .header hr {
+        width: 30%;
+    }
+}
+
 @media screen and (max-width: 720px) {
+    
     .container {
         width: 100%;
+    }
+
+    .header hr {
+        width: clamp(20px, 24vw, 240px);
     }
 }
