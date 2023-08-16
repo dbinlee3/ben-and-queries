@@ -1,10 +1,40 @@
 import dormit from "../../../assets/work/dormit.svg";
+import flourish from "../../../assets/work/flourish.svg";
 
 export const data = [
     {
+        name: "Flourish Science",
+        title: "Software Engineer Intern",
+        link: "https://www.flouriship.com/",
+        img: flourish,
+        dates: {
+            start: "April 2023",
+            end: "Current"
+        },
+        bullets: [
+            "Started as a Contractor",
+            "Built many components and enhancements",
+            "Other stuff",
+        ]
+    },
+    {
+        name: "Flourish Science",
+        title: "Software Engineer Contractor",
+        link: "https://www.flouriship.com/",
+        img: flourish,
+        dates: {
+            start: "March 2023 - April 2023",
+            end: "Current"
+        },
+        bullets: [
+            "Started as a Contractor",
+            "Built many components and enhancements",
+            "Other stuff",
+        ]
+    },
+    {
         name: "DormIt",
-        title: "Engineer",
-        link: "https://www.dormit.app/",
+        title: "Web Developer",
         img: dormit,
         dates: {
             start: "July 2022",

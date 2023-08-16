@@ -6,6 +6,11 @@ import photo from "../../assets/photos/ben-photo-2.svg";
 import styles from "./About.module.css";
 
 function About() {
+
+    function scrollSection(ref) {
+        document.getElementById(ref).scrollIntoView({ behavior: "smooth" });
+    }
+
     return (
         <div className={styles.container} id="#about">
             <div className={styles.content}>
@@ -16,7 +21,26 @@ function About() {
                         <hr />
                     </div>
 
-                    <p>{aboutDescription}</p>
+                    <p>
+                    {aboutDescription.map((item) => {
+                        
+                        if (item[0] !== "#"){
+                            if (item[item.length-1] === "\n"){
+                                return <>{item}<div className={styles.newLine}/></>
+                            }
+                            else return item;
+                        }
+
+                        else {
+                            return <span 
+                                className={styles.aboutLink}
+                                onClick={() => scrollSection("#projects")}
+                                >
+                                    {item.slice(1, item.length)}
+                                </span>
+                        }
+                    })}
+                    </p>
 
                     <ul className={styles.skillsList}>
                         {skills.map((item) => {

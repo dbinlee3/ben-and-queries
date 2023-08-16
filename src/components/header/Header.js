@@ -60,7 +60,7 @@ function Header() {
 
                         <img className={styles.close} src={close} alt="Close" onClick={() => setMenuState(false)}/>
                             {navItems.map((item) => {
-                                return <button onClick={() => scrollSection(item.ref)}className={item.className}>{item.name}</button>
+                                return <button onClick={() => scrollSection(item.ref)} className={item.className}>{item.name}</button>
                             })}
                         </div>
                     </div>

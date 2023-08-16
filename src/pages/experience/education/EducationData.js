@@ -5,7 +5,7 @@ export const data = [
         degree: "Bachelor's of Science",
         link: "https://cogsci.ucsd.edu/undergraduates/major/design-interaction.html",
         completed: false,
-        date: "Spring 2023"
+        date: "Summer 2023"
     },
     {
         title: "Computer Science",
@@ -13,6 +13,6 @@ export const data = [
         degree: "Minor",
         link: "https://cse.ucsd.edu/",
         completed: false,
-        date: "Spring 2023"
+        date: "Summer 2023"
     }
 ]

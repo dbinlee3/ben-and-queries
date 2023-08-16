@@ -1,6 +1,7 @@
 .loadContainer {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     position: fixed;
     z-index: 100;
     background-color: var(--primary-dark);
@@ -127,7 +128,8 @@
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-color: var(--primary);
     display: flex;
     justify-content: center;
@@ -137,7 +139,8 @@
 .content {
     max-width: 1080px;
     width: 75%;
-    height: 480px;
+    min-height: 480px;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -147,7 +150,8 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: 480px;
+    min-height: 480px;
+    height: auto;
 }
 
 .leftContent {
@@ -183,6 +187,7 @@
 }
 
 .right {
+    padding: 40px 0;
     width: 36%;
     max-width: 380px;
     display: flex;
@@ -204,7 +209,7 @@
 .right img {
     cursor: pointer;
     width: 60px;
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
     animation-name: moving;
     animation-iteration-count: infinite;
     animation-direction: alternate;
