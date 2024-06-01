@@ -50,12 +50,7 @@ function Header() {
                         onClick={() => setMenuState(!menuState)} 
                     />
 
-                    
-
                     <div ref={menuRef} className={menuState ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
-
-                        
-
                         <div className={styles.navContent}>
 
                         <img className={styles.close} src={close} alt="Close" onClick={() => setMenuState(false)}/>

@@ -4,15 +4,15 @@ export const data = [
         school: "University of California, San Diego",
         degree: "Bachelor's of Science",
         link: "https://cogsci.ucsd.edu/undergraduates/major/design-interaction.html",
-        completed: false,
-        date: "Summer 2023"
+        completed: true,
+        date: "September 2023"
     },
     {
         title: "Computer Science",
         school: "University of California, San Diego",
         degree: "Minor",
         link: "https://cse.ucsd.edu/",
-        completed: false,
-        date: "Summer 2023"
+        completed: true,
+        date: "September 2023"
     }
 ]

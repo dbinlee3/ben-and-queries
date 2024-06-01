@@ -8,17 +8,16 @@ export const navItems = [
     },
 
     {
-        name: "Projects",
-        ref: "#projects",
-        className: styles.navItem
-    },
-
-    {
         name: "Work",
         ref: "#work",
         className: styles.navItem
     },
 
+    // {
+    //     name: "Projects",
+    //     ref: "#projects",
+    //     className: styles.navItem
+    // },
     {
         name: "Education",
         ref: "#education",

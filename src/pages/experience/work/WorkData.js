@@ -1,35 +1,35 @@
 import dormit from "../../../assets/work/dormit.svg";
-import flourish from "../../../assets/work/flourish.svg";
+import flourishIntern from "../../../assets/work/flourish-intern.svg";
+import flourishFull from "../../../assets/work/flourish-full.svg";
 
 export const data = [
     {
         name: "Flourish Science",
-        title: "Software Engineer Intern",
+        title: "Founder Software Engineer",
         link: "https://www.flouriship.com/",
-        img: flourish,
+        img: flourishFull,
         dates: {
-            start: "April 2023",
+            start: "September 2023",
             end: "Current"
         },
         bullets: [
-            "Started as a Contractor",
-            "Built many components and enhancements",
-            "Other stuff",
+            "Implement new features that aim for user retention",
+            "Build components and endpoints that fascilitate a product fit for B2B sales",
         ]
     },
     {
         name: "Flourish Science",
-        title: "Software Engineer Contractor",
+        title: "Software Engineer Intern",
         link: "https://www.flouriship.com/",
-        img: flourish,
+        img: flourishIntern,
         dates: {
-            start: "March 2023 - April 2023",
-            end: "Current"
+            start: "March 2023",
+            end: "September 2023"
         },
         bullets: [
-            "Started as a Contractor",
-            "Built many components and enhancements",
-            "Other stuff",
+            "Implemented and carried out products that enhanced daily usability",
+            "Assisted in enhancing the product's social feature",
+            "Assisted in refactoring codebase in order to imporved modularity and performance",
         ]
     },
     {
@@ -41,11 +41,11 @@ export const data = [
             end: "October 2022"
         },
         bullets: [
-            "Collaborate with a full stack team to spearhead a student-led food delivery app using Firebase and the Stripe extension.",
-            "Develop user interfaces for 5+ pages with React, CSS3 and Material UI, to ensure technical feasibility of UX/UI designs",
+            "Collaborated with a full stack team to spearhead a student-led food delivery app using Firebase and the Stripe extension.",
+            "Developed user interfaces for 5+ pages with React, CSS3 and Material UI, to ensure technical feasibility of UX/UI designs",
             "Elected as one of three main developers for the web development team to handle complex Javascript logic and Firebase functionality",
-            "Review and optimize team members’ code to convert and refactor 10+ files for project connectivity",
-            "Train a junior developer on Github operations in a professional team setting to improve team productivity and efficiency"
+            "Reviewed and optimized team members’ code to convert and refactor 10+ files for project connectivity",
+            "Trained a junior developer on Github operations in a professional team setting to improve team productivity and efficiency"
         ]
     }
 ];
