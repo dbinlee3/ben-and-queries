@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     height: auto;
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
     display: flex;
     justify-content: center;
 }
@@ -48,7 +48,6 @@
 }
 
 .projectImgLink {
-    height: inherit;
     max-width: 600px;
     width: 55%;
 }
@@ -110,8 +109,7 @@
     height: auto;
     margin-top: 10px;
     margin-bottom: 15px;
-
-    background-color: var(--primary-dark);
+    background: linear-gradient(to right, var(--primary), rgb(0,0,0,0));
     text-align: left;
 }
 

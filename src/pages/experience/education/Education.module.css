@@ -2,6 +2,9 @@
     max-width: 445px;
     width: 40%;
     padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 54px;
 }
 
 .header {
@@ -22,11 +25,9 @@
 }
 
 .content {
-    margin-top: 54px;
-}
-
-.entryContainer {
-    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 54px;
 }
 
 .entryContainer > h5 {
@@ -51,8 +52,7 @@
     margin-top: 22px;
     width: 100%;
     height: auto;
-
-    background: linear-gradient(to right, var(--primary), rgb(0,0,0,0));
+    background-color: var(--primary-dark);
     display: flex;
     flex-direction: column;
     grid-gap: 12px;

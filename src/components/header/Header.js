@@ -50,17 +50,12 @@ function Header() {
                         onClick={() => setMenuState(!menuState)} 
                     />
 
-                    
-
                     <div ref={menuRef} className={menuState ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
-
-                        
-
                         <div className={styles.navContent}>
 
                         <img className={styles.close} src={close} alt="Close" onClick={() => setMenuState(false)}/>
                             {navItems.map((item) => {
-                                return <button onClick={() => scrollSection(item.ref)}className={item.className}>{item.name}</button>
+                                return <button onClick={() => scrollSection(item.ref)} className={item.className}>{item.name}</button>
                             })}
                         </div>
                     </div>

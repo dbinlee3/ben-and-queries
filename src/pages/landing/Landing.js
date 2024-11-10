@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 import logo from "../../assets/icons/logo.svg";
 import doubleArrow from "../../assets/icons/double-arrow.svg";
+import loadLeft from "../../assets/icons/load-left.svg";
+import loadRight from "../../assets/icons/load-right.svg";
 import photo from "../../assets/photos/ben-photo-1.svg";
 
 import { landingDescription } from "../../TextData.js";
@@ -13,7 +15,28 @@ function scrollNext(ref) {
 }
 
 function Landing() {
+
+    const [loadStyle, setLoadStyle] = useState({ opacity: 1 });
+
+    useEffect(() => {
+        setTimeout(function () {
+            setLoadStyle({ opacity: 0 , zIndex: -1});
+        }, 5000)
+    }, [])
+
     return (
+    <>
+        <div className={styles.loadContainer} style={loadStyle}>
+            <div className={styles.loadContent}>
+                <img src={logo} className={styles.logo} alt="Logo"/>
+
+                <div className={styles.loadArrows}>
+                    <img src={loadLeft} alt="" className={styles.loadLeft}/>
+                    <img src={loadRight} alt=""/>
+                </div>
+            </div>
+
+        </div>
         <div className={styles.container}>
             <div className={styles.content}>
 
@@ -39,6 +62,7 @@ function Landing() {
                 </section>
             </div>
         </div>
+    </>
     )
 }
 
