@@ -30,12 +30,7 @@ function Work() {
 
                         <div className={styles.descriptionContainer}>
                             <ul className={styles.descriptionContent}>
-                                {item.bullets.map((bullet) => {
-                                    return <li className={styles.description}>
-                                        <div className={styles.triangle} />
-                                        <p>{bullet}</p>
-                                    </li>
-                                })}
+                                <p>{item.content}</p>
                             </ul>
                         </div>
                     </li>

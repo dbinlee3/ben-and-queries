@@ -103,6 +103,10 @@
     grid-gap: 14px;
 }
 
+.descriptionContent > p {
+    color: var(--font);
+}
+
 .description {
     display: flex;
     grid-gap: 10px;
