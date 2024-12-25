@@ -4,7 +4,7 @@ import logo from "../../assets/icons/logo.svg";
 import doubleArrow from "../../assets/icons/double-arrow.svg";
 import loadLeft from "../../assets/icons/load-left.svg";
 import loadRight from "../../assets/icons/load-right.svg";
-import photo from "../../assets/photos/ben-photo-1.svg";
+import photo from "../../assets/photos/ben-photo-1.png";
 
 import { landingDescription } from "../../TextData.js";
 

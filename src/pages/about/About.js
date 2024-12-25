@@ -1,7 +1,7 @@
 import React from 'react'
 import { aboutDescription, skills } from "../../TextData.js";
 
-import photo from "../../assets/photos/ben-photo-2.svg";
+import photo from "../../assets/photos/ben-photo-2.png";
 
 import styles from "./About.module.css";
 
