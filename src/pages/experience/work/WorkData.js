@@ -12,10 +12,12 @@ export const data = [
             start: "September 2023",
             end: "Current"
         },
-        content: "Filled many roles from being a core backend developer, to a full stack engineer who works in various technical environments such as AWS deployments, cron schedulers, Flutter and more. Supported the migration of the app from a web app to a fully native mobile app using Flutter, overseeing key features such as push notifications (via Firebase Cloud Messaging) and deep-linking. Developed prompt-driven AI features, including chatbot smart replies, and weekly user insight reports, leveraging LLMs for personalized well-being support. Currently developing a React-based Webapp to showcase LLM-powered well-being tools.",
+        content: "",
         bullets: [
-            "Implement new features that aim for user retention",
-            "Build components and endpoints that fascilitate a product fit for B2B sales",
+            "Filled many roles from being a core backend developer, to a full stack engineer who works in various technical environments such as AWS deployments, cron schedulers, Flutter and more. ",
+            "Supported the migration of the app from a web app to a fully native mobile app using Flutter, overseeing key features such as push notifications (via Firebase Cloud Messaging) and deep-linking.",
+            "Developed prompt-driven AI features, including chatbot smart replies, and weekly user insight reports, leveraging LLMs for personalized well-being support.",
+            "Currently developing a React-based Webapp to showcase LLM-powered well-being tools."
         ]
     },
     {
@@ -27,12 +29,12 @@ export const data = [
             start: "March 2023",
             end: "September 2023"
         },
-        content: "Refactored the backend codebase from JavaScript to TypeScript, improving scalability and long-term maintainability. Built features like a daily pulse meter, boosting user engagement, and enhanced social functionalities for activity sharing and user connections. Played a key role in the platform’s transformation from a one-time workshop app into a daily-use well-being app.",
+        content: "Built features like a daily pulse meter, boosting user engagement, and enhanced social functionalities for activity sharing and user connections. Played a key role in the platform’s transformation from a one-time workshop app into a daily-use well-being app.",
         bullets: [
-            "Extensively refactored the server-side codebase from JavaScript to TypeScript to improve scalability and maintainability for a long-term retention-based well-being app. Enhanced code accuracy, QA efficiency, and implementation speed, transitioning the product from a simple 1-week workshop tool to a robust, engagement-focused platform.",
-            "Developed a daily pulse feature, driving a significant increase in daily user engagement by enabling users to interact with a quick, bite-sized activity.",
-            "Assisted in enhancing the app's social feature, enabling users to share activities and add buddies, fostering a more interactive community experience.",
-            "Created multiple endpoints in Express to support app features, improving development cycle efficiency for future feature iterations and updates.",
+            "Refactored the backend codebase from JavaScript to TypeScript, improving scalability and long-term maintainability",
+            "Developed a daily pulse feature, driving a significant increase in daily user engagement by enabling users to interact with a quick, bite-sized activity",
+            "Played a key role in the platform’s transformation from a one-time workshop app into a daily-use well-being app",
+            "Created multiple endpoints in Express to support app features, improving development cycle efficiency for future feature iterations and updates",
         ]
     },
     {

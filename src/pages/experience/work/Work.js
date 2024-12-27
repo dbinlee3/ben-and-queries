@@ -24,13 +24,18 @@ function Work() {
                             </div>
 
                             <a className={styles.entryImgLink} href={item.link} target="_blank" rel="noopener noreferrer">
-                                <img className={styles.entryImg} src={item.img} alt={item.name}/>
+                                <img className={styles.entryImg} src={item.img} alt={item.name} />
                             </a>
                         </div>
 
                         <div className={styles.descriptionContainer}>
                             <ul className={styles.descriptionContent}>
-                                <p>{item.content}</p>
+                                {item.bullets.map((bullet) => {
+                                    return <div style={{display: "flex", gap: "8px"}}>
+                                        <div className={styles.triangle} />
+                                        <p style={{display: 'inline-block', color: "#c9c9c9"}}>{bullet}</p>
+                                    </div>
+                                })}
                             </ul>
                         </div>
                     </li>
